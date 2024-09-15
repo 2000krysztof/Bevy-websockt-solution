@@ -1,0 +1,21 @@
+[package]
+name = "bevy_browser_websocket_plugin"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+wasm-bindgen = "0.2.92"
+js-sys = "0.3"
+bevy = { version = "0.14", features = ["dynamic_linking"] }
+
+[dependencies.web-sys]
+version = "0.3.22"
+features = [
+  "BinaryType",
+  "Blob",
+  "ErrorEvent",
+  "FileReader",
+  "MessageEvent",
+  "ProgressEvent",
+  "WebSocket",
+]

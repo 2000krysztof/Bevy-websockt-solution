@@ -1,0 +1,10 @@
+[package]
+name = "bevy_server_websocket_plugin"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+websocket = "0.27.1"
+crossbeam = "0.8"
+crossbeam-channel = "0.5"
+bevy = { version = "0.14", features = ["dynamic_linking"] }
